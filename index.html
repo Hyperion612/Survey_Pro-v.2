@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SurveyPro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="#/" class="logo">
+        <span class="logo-icon">📊</span>
+        <span class="logo-text">SurveyPro</span>
+      </a>
+      <nav class="nav" id="navBar"></nav>
+      <div class="user-area" id="userArea"></div>
+    </div>
+  </header>
+
+  <main id="app" class="app-main"></main>
+
+  <footer class="app-footer">
+    <p>© 2025 SurveyPro · Данные хранятся локально в вашем браузере</p>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true">
+      <h3 id="modalTitle">Подтверждение</h3>
+      <p id="modalText">Вы уверены?</p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="modalCancel">Отмена</button>
+        <button class="btn btn-danger" id="modalConfirm">Подтвердить</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
